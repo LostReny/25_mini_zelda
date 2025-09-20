@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+E:\gameDev\DANKI_CODE\25_mini_zelda\.metadata\.plugins\org.eclipse.jdt.core
+1288848795.index
+2029931347.index
+1865797976.index

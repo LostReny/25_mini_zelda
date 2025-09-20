@@ -1,0 +1,26 @@
+package zeldaminiclone;
+
+import java.awt.Canvas;
+import java.awt.Dimension;
+
+public class Game extends Canvas implements Runnable{
+
+	public static int WIDTH = 480;
+	public static int HEIGTH = 480;
+	
+	public static void main(String[] args) {
+	}
+	
+	public Game() {
+		this.setPreferredSize(new Dimension(WIDTH,HEIGHT));	
+	}
+	
+	@Override 
+	public void run() {
+		
+		
+	}
+	
+	
+
+}
