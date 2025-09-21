@@ -1,0 +1,16 @@
+package zeldaminiclone;
+
+import java.awt.image.BufferedImage;
+
+import javax.imageio.ImageIO;
+
+public class Spritesheet {
+
+	public static BufferedImage spritesheet;
+	
+	public static BufferedImage player_front;
+	
+	public Spritesheet() {
+		spritesheet = ImageIO.read(getClass().getResource("/aula05-spritesheet.png"));
+	}
+}

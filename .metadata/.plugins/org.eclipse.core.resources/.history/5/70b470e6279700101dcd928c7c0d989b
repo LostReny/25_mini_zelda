@@ -1,0 +1,14 @@
+package zeldaminiclone;
+
+import java.awt.image.BufferedImage;
+
+public class Spritesheet {
+
+	public static BufferedImage spritesheet;
+	
+	public static BufferedImage player_front;
+	
+	public Spritesheet() {
+		
+	}
+}
