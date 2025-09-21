@@ -1,0 +1,21 @@
+package zeldaminiclone;
+
+import java.awt.Graphics;
+import java.util.ArrayList;
+import java.util.List;
+
+public class World {
+	
+	public List<Blocks> blocos = new ArrayList<Blocks>();
+	
+	public World() {
+		
+	}
+	
+	public void render(Graphics g) {
+		for(int i = 0; i < blocos.size(); i++) {
+			blocos.get(i).render(g);
+		}
+	}
+
+}

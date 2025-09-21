@@ -15,17 +15,17 @@ public class Player extends Rectangle{
 		
 	public void tick() {
 		
-		if (right && World.isFree(x+spd, y)) {
+		if (right) {
 			x += spd;
 		}
-		else if(left && World.isFree(x-spd, y)) {
+		else if(left) {
 			x -= spd;
 		}
 		
-		if (up && World.isFree(x, y-spd)) {
+		if (up) {
 			y -= spd;
 		}
-		else if(down && World.isFree(x, y+spd)) {
+		else if(down) {
 			y += spd;
 		}
 	}
