@@ -28,15 +28,11 @@ public class Spritesheet {
 		
 		player_front = Spritesheet.getSprite(0, 11, 16, 16);
 		
-		walltile = Spritesheet.getSprite1(18, 52, 16, 16);
+		walltile = Spritesheet.getSprite(16, 6, 16, 16);
 	}
 	
 	public static BufferedImage getSprite(int x, int y, int width, int height) {
 		return spritesheet.getSubimage(x, y, width, height);
-	}
-	
-	public static BufferedImage getSprite1(int x, int y, int width, int height) {
-		return worldtiles.getSubimage(x, y, width, height);
 	}
 	
 }
