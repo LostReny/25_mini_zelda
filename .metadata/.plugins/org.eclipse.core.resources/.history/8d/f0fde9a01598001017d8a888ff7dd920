@@ -9,26 +9,17 @@ public class Spritesheet {
 
 	public static BufferedImage spritesheet;
 	
-	public static BufferedImage worldtiles;
-	
 	public static BufferedImage player_front;
-	
-	public static BufferedImage walltile;
 	
 	public Spritesheet() {
 		try {
 			spritesheet = ImageIO.read(getClass().getResource("/spritesheet.png"));
-			
-			worldtiles = ImageIO.read(getClass().getResource("/overworldtiles.png"));
-			
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
 		player_front = Spritesheet.getSprite(0, 11, 16, 16);
-		
-		walltile = Spritesheet.getSprite(16, 6, 16, 16);
 	}
 	
 	public static BufferedImage getSprite(int x, int y, int width, int height) {
