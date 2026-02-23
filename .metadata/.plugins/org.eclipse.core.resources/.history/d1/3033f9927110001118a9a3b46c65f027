@@ -67,9 +67,6 @@ public class Player extends Rectangle{
 			player_front_sprite = true;
 			player_back_sprite = false;
 			dir = 1;
-			// problema = direção projetil cima e baixo - não move para cima e baixo
-			// como resolver ? pq não vai na dir y ?
-			// dir x ? dir y ?
 		}
 		
 		if(moved) {
