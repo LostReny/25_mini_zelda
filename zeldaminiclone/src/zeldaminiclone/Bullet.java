@@ -7,16 +7,19 @@ import java.awt.Rectangle;
 public class Bullet extends Rectangle{
 	
 	public int dir = 1;
+	public int diry = 1;
 	public int speed = 8;
 	public int frames = 0;
 
-	public Bullet(int x, int y, int dir) {
+	public Bullet(int x, int y, int dir, int diry) {
 		super(x+16, y+16, 10, 10); //metodo construtor - classe retangulo
 		this.dir = dir;
+		this.diry = diry;
 	}
 	
 	public void tick() {
 		x += speed*dir;
+		y += speed*diry;
 		frames++;
 		if(frames == 60) {
 			Player.bullets.remove(this);

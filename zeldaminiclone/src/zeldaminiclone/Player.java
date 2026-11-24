@@ -11,6 +11,7 @@ public class Player extends Rectangle{
 	public int spd = 3;
 	public boolean right, up, down, left, shoot;
 	public int dir = 1;
+	public int diry = 1;
 	
 	//Sprites
 	
@@ -42,6 +43,7 @@ public class Player extends Rectangle{
 			player_front_sprite = false;
 			facingRight = false;
 			dir = 1;
+			diry = 0;
 		}
 		else if(left && World.isFree(x-spd, y)) {
 			x -= spd;
@@ -50,6 +52,7 @@ public class Player extends Rectangle{
 			player_front_sprite = false;
 			facingRight = true;
 			dir = -1;
+			diry = 0;
 		}
 		
 		if (up && World.isFree(x, y-spd)) {
@@ -58,7 +61,8 @@ public class Player extends Rectangle{
 			player_side_sprite = false;
 			player_front_sprite = false;
 			player_back_sprite = true;
-			dir = 1;
+			dir = 0;
+			diry = -1;
 		}
 		else if(down && World.isFree(x, y+spd)) {
 			y += spd;
@@ -66,10 +70,9 @@ public class Player extends Rectangle{
 			player_side_sprite = false;
 			player_front_sprite = true;
 			player_back_sprite = false;
-			dir = 1;
-			// problema = direção projetil cima e baixo - não move para cima e baixo
-			// como resolver ? pq não vai na dir y ?
-			// dir x ? dir y ?
+			dir = 0;
+			diry = 1;
+			
 		}
 		
 		if(moved) {
@@ -91,7 +94,7 @@ public class Player extends Rectangle{
 		
 		if(shoot) {
 			shoot = false;
-			bullets.add(new Bullet(x,y,dir));
+			bullets.add(new Bullet(x,y,dir,diry));
 		}
 		
 		for(int i = 0; i < bullets.size(); i ++) {
