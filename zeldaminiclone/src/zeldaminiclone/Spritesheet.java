@@ -17,6 +17,8 @@ public class Spritesheet {
 	
 	public static BufferedImage[] player_back;
 	
+	public static BufferedImage[] inimigo_front; 
+	
 	public static BufferedImage walltile;
 	
 	public Spritesheet() {
@@ -41,6 +43,11 @@ public class Spritesheet {
 		player_back = new BufferedImage[2];
 		player_back[0] = Spritesheet.getSprite(69, 11, 16, 16);
 		player_back[1] = Spritesheet.getSprite(86, 11, 16, 16);
+		
+		inimigo_front = new BufferedImage[2];
+		inimigo_front[0] = Spritesheet.getSprite(313, 154, 16, 16);
+		inimigo_front[1] = Spritesheet.getSprite(330, 154, 16, 16);
+		
 		
 		walltile = Spritesheet.getSprite1(18, 52, 16, 16);
 	}

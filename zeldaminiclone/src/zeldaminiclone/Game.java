@@ -117,7 +117,7 @@ public class Game extends Canvas implements Runnable, KeyListener{
 			player.down = true;
 		}
 		
-		if(e.getKeyCode() == KeyEvent.VK_0 || e.getKeyCode() == KeyEvent.VK_X) {
+		if(e.getKeyCode() == KeyEvent.VK_CONTROL || e.getKeyCode() == KeyEvent.VK_X) {
 			player.shoot = true;
 		}
 	}
@@ -140,7 +140,7 @@ public class Game extends Canvas implements Runnable, KeyListener{
 			player.down = false;
 		}
 		
-		if(e.getKeyCode() == KeyEvent.VK_0 || e.getKeyCode() == KeyEvent.VK_X) {
+		if(e.getKeyCode() == KeyEvent.VK_CONTROL || e.getKeyCode() == KeyEvent.VK_X) {
 			player.shoot = false;
 		}
 	}

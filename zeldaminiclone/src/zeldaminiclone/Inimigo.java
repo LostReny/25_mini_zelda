@@ -45,7 +45,7 @@ public class Inimigo extends Rectangle{
 			if(curFrames == targetFrames) {
 				curFrames = 0;
 				curAnimation++;
-				if(curAnimation == Spritesheet.player_front.length) {
+				if(curAnimation == Spritesheet.inimigo_front.length) {
 					curAnimation = 0;
 				}
 				if(curAnimation == Spritesheet.player_side.length) {
