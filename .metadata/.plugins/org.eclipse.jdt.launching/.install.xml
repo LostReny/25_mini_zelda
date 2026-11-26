@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <dirs>
+    <entry loc="C:\Users\User\Downloads\eclipse-java-2026-09-R-win32-x86_64\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_25.0.4.v20260826-0822" stamp="1795693653835"/>
+    <entry loc="C:\Users\User\Downloads\eclipse-java-2026-09-R-win32-x86_64\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_25.0.4.v20260826-0822\jre" stamp="1795693658916"/>
     <entry loc="C:\Program Files\Java\jdk-23" stamp="1736995552672"/>
+    <entry loc="C:\Program Files (x86)\Eclipse Adoptium\jre-8.0.312.7-hotspot" stamp="1637352596840"/>
+    <entry loc="C:\Program Files\Java\jre1.8.0_281" stamp="1637351214711"/>
+    <entry loc="C:\Program Files\Eclipse Adoptium\jre-8.0.312.7-hotspot" stamp="1637352603339"/>
+    <entry loc="C:\Program Files\Eclipse Adoptium\jre-11.0.13.8-hotspot" stamp="1637352599356"/>
 </dirs>
