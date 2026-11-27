@@ -1,2 +1,3 @@
-2026/11/26-08:51:18.437 70f0 Creating DB D:\danki_code\25_mini_zelda\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Sync Data\LevelDB since it was missing.
-2026/11/26-08:51:23.548 70f0 Reusing MANIFEST D:\danki_code\25_mini_zelda\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Sync Data\LevelDB/MANIFEST-000001
+2026/11/26-08:56:59.914 2cfc Reusing MANIFEST D:\danki_code\25_mini_zelda\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Sync Data\LevelDB/MANIFEST-000001
+2026/11/26-08:56:59.935 2cfc Recovering log #3
+2026/11/26-08:56:59.935 2cfc Reusing old log D:\danki_code\25_mini_zelda\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Sync Data\LevelDB/000003.log 

@@ -1,2 +1,3 @@
-2026/11/26-08:51:23.282 69a8 Creating DB D:\danki_code\25_mini_zelda\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb since it was missing.
-2026/11/26-08:51:38.769 69a8 Reusing MANIFEST D:\danki_code\25_mini_zelda\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
+2026/11/26-08:56:59.966 72f8 Reusing MANIFEST D:\danki_code\25_mini_zelda\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
+2026/11/26-08:56:59.968 72f8 Recovering log #3
+2026/11/26-08:56:59.974 72f8 Reusing old log D:\danki_code\25_mini_zelda\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/000003.log 

@@ -21,6 +21,8 @@ public class Inimigo extends Rectangle{
 	
 	public boolean facingRight = true;
 	
+	public boolean inimigo_front_sprite = true; 
+	
 	public int curAnimation = 0;
 	public int curFrames = 0;
 	public int targetFrames = 15;
@@ -35,8 +37,8 @@ public class Inimigo extends Rectangle{
 	}
 		
 	public void tick() {
-		boolean moved = false;
-		if(right == 1) {
+		boolean moved = true;
+		if(right == 1 && World.isFree(x+spd, y)) {
 			x++;
 		}
 		
@@ -48,12 +50,12 @@ public class Inimigo extends Rectangle{
 				if(curAnimation == Spritesheet.inimigo_front.length) {
 					curAnimation = 0;
 				}
-				if(curAnimation == Spritesheet.player_side.length) {
+				/*if(curAnimation == Spritesheet.player_side.length) {
 					curAnimation = 0;
 				}
 				if(curAnimation == Spritesheet.player_back.length) {
 					curAnimation = 0;
-				}
+				}*/
 			}			
 		}
 		
@@ -72,7 +74,7 @@ public class Inimigo extends Rectangle{
 	public void render(Graphics g) {
 		/*g.setColor(Color.blue);
 		g.fillRect(x, y, width, height);*/
-	    if (player_side_sprite) {
+	   /* if (player_side_sprite) {
 	        if (facingRight) {
 	            g.drawImage(Spritesheet.player_side[curAnimation],
 	                        x + width, y, -width, height, null);
@@ -80,14 +82,14 @@ public class Inimigo extends Rectangle{
 	            g.drawImage(Spritesheet.player_side[curAnimation],
 	                        x, y, width, height, null);
 	        }
-	    } 
-	    else if (player_front_sprite) {
-	        g.drawImage(Spritesheet.player_front[curAnimation],
+	    } */
+	    if (inimigo_front_sprite) {
+	        g.drawImage(Spritesheet.inimigo_front[curAnimation],
 	                    x, y, width, height, null);
 	    }
-	    else if (player_back_sprite) {
+	    /*else if (player_back_sprite) {
 	    	g.drawImage(Spritesheet.player_back[curAnimation], x, y, width, height, null);
-	    }
+	    }*/
 	    
 	    for(int i = 0; i < bullets.size(); i ++) {
 			bullets.get(i).render(g);
